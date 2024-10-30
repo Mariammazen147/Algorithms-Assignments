@@ -168,14 +168,14 @@ int main()
 {
 	int E;
 
-	// Input the number of employees
+
 	cout << "Enter the number of employees (E): ";
 	cin >> E;
 
 	Graph g;
 	g.Initialize(E);
 
-	// Input the friendship relations for each employee
+
 	for (int i = 0; i < E; i++) {
 		cout << "Enter the number of friends for employee " << i << " followed by their IDs: ";
 		int N;
@@ -189,11 +189,10 @@ int main()
 
 	int T;
 
-	// Input the number of test cases
+
 	cout << "Enter the number of test cases (T): ";
 	cin >> T;
 
-	// For each test case, input the source employee and perform BFS
 	for (int i = 0; i < T; i++) {
 		int source;
 		cout << "Enter the source employee ID for test case " << i + 1 << ": ";
@@ -205,3 +204,6 @@ int main()
 	g.Destroy();
 	return 0;
 }
+
+// 6 2 1 2 2 3 4 3 0 4 5 1 4 0 2 0 2 3 0 4 5 
+//3 2 0 2 1
